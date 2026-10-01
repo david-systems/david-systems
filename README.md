@@ -17,12 +17,11 @@ I built a production-style evaluation around **Northstar Outdoor Living**, a fic
 | GPT-5.6 Luna / Codex | 168 | 104 | 63 |
 | GPT-5.6 Sol High / Codex | **334** | **1** | **0** |
 
-**Repository:** [LLM Coding Agent Evaluation](https://github.com/david-systems/llm-coding-agent-evaluation)
+**Repository:** [LLM Coding Agent Evaluation](https://github.com/david-systems/llm-eval-coding-agent)
 
 ## How This Project Evolved
 
-This project began with a smaller **Promotion Evaluation 1 pilot**, based on promotion problems I encountered in real e-commerce systems.
-
+This project began with a smaller **[Promotion Evaluation 1 pilot](https://github.com/david-systems/llm-eval-promotions-pilot)**, based on promotion problems I encountered in real e-commerce systems.
 The pilot caught genuine coding failures, but it exposed a harder evaluation problem: **how do you know the grader itself is fair?**
 
 I rebuilt the evaluation as 2.0 around several lessons:
