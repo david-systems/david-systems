@@ -15,7 +15,9 @@ I built a production-style evaluation around **Northstar Outdoor Living**, a fic
 | Candidate | PASS | FAIL | BLOCKED |
 |---|---:|---:|---:|
 | GPT-5.6 Luna / Codex | 168 | 104 | 63 |
-| GPT-5.6 Sol High / Codex | **334** | **1** | **0** |
+| GPT-5.6 Sol High / Codex | 334 | 1 | 0 |
+| Claude Sonnet 5.5 High / Claude Code | **335** | **0** | **0** |
+| Claude Haiku 4.5 / Claude Code | 58 | 64 | 213 |
 
 **Repository:** [LLM Coding Agent Evaluation](https://github.com/david-systems/llm-eval-coding-agent)
 
@@ -38,11 +40,11 @@ The result wasn't just a harder benchmark; it was a much stronger **evaluation m
 
 ## What the Experiments Taught Me
 
-The two trials produced very different results. Luna preserved the existing application but implemented only part of the new capability. Sol High independently implemented nearly the entire system and passed **334 of 335** deterministic assertions.
+Four independent candidate trials produced sharply different outcomes. GPT-5.6 Luna passed **168 of 335** assertions, while Claude Haiku 4.5 passed **58**, with many downstream checks blocked by unmet prerequisites. At the other end, GPT-5.6 Sol High passed **334 of 335**, and Claude Sonnet 5.5 High passed **335 of 335**.
 
-That produced another useful evaluation result: **this particular task is approaching saturation for a stronger coding agent.**
+The spread shows that the evaluation can distinguish substantial differences in candidate performance, while the near-perfect and perfect results show that **this particular task is reaching saturation for the strongest candidates tested**.
 
-Rather than manufacture increasingly obscure promotion edge cases, I'm using that finding to move the next evaluation toward a harder capability.
+Rather than manufacture increasingly obscure promotion edge cases, I'm using that finding to move the next evaluation toward a harder capability: determining the correct action when evidence is distributed across systems, documentation, organizational conventions, and partially conflicting information.
 
 ## Next — MCP & Organizational Reasoning Evaluation
 
